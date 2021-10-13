@@ -44,5 +44,3 @@ for mods in models:
                     with dask.config.set(**{'array.slicing.split_large_chunks': False}):
                         Annual_mean = ds.groupby('time.year').mean(dim=('lon','lat','time'))
                         print(Annual_mean)
-                                    #list_netcdf=xr.concat([file_list2,Annual_mean],dim='time')
-                #ds_combine.to_netcdf(/***REMOVED***/***REMOVED***/+ CMIP6_Annual-mean)

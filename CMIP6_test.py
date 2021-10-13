@@ -43,4 +43,5 @@ for mods in models:
                     ds=xr.open_mfdataset(file_list)
                     with dask.config.set(**{'array.slicing.split_large_chunks': False}):
                         Annual_mean = ds.groupby('time.year').mean(dim=('lon','lat','time'))
-                        print(Annual_mean)
+                        print(Annual_mean) #printing
+                            

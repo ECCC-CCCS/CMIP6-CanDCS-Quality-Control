@@ -14,6 +14,8 @@ input_dir="/***REMOVED***/***REMOVED***/SD_PCIC/CMIP6_BCCAQv2_1/Climdex/"
 output_dir="/***REMOVED***/projects/CMIP6-BCCAQ-quality-control/level_of_warming/"
 ########################################################################################################################
 ########## read table of levels warming                    ############################################################
+## How to push it
+######################
 scenarios=["ssp585","ssp245","ssp126"]
 for sc in scenarios:
     lw_ssp = pd.read_csv(output_dir+'global_cmip6_'+sc+'_tas_degree_anomaly_years_26_GCMs.csv')

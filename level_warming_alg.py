@@ -15,7 +15,11 @@ output_dir="/***REMOVED***/projects/CMIP6-BCCAQ-quality-control/level_of_warming
 ########################################################################################################################
 ########## read table of levels warming                    ############################################################
 ## How to push it
+<<<<<<< HEAD
 ### password test
+=======
+## pw test2
+>>>>>>> ebf01567e63f43ff086e9698da18b93995f99e6a
 ######################
 scenarios=["ssp585","ssp245","ssp126"]
 for sc in scenarios:
